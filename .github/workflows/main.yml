@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 'ftp://85.214.149.36/bbzcloud.bbz-rd-eck.com/'
+        server: '85.214.149.36/bbzcloud.bbz-rd-eck.com'
         username: 'ci_cd_account'
         password: 'D8ayp_567'
