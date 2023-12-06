@@ -3,9 +3,9 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="msapplication-starturl" content="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="manifest" href="manifest.json">
   <title>BBZ Cloud</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +16,7 @@
   </style>
  </head>
  <body class="bg-gray-100 max-w-full">
-  <div class="container mx-auto p-2">
+  <div class="mx-auto p-2">
    <!-- Header with Logo and Buttons -->
    <div id="navbar" class="flex items-center justify-between bg-white p-2 shadow-md">
     <img
@@ -62,7 +62,7 @@
     function adjustIframeHeight() {
       const navbarHeight = document.getElementById("navbar").offsetHeight;
       const iframe = document.getElementById("webView");
-      iframe.style.height = `calc(100vh - ${navbarHeight}px)`;
+      iframe.style.height = `calc(100vh - ${navbarHeight+5}px)`;
     }
 
     // Call the function initially
