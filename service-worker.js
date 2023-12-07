@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["BBZ-Logo-Master-dark.png","05cb0bb6cc1d92e2d1b0c25b006f09cc"],["BBZ-Logo-Master.png","57a64ff3aadd059d78c28a5cf295192d"],["helper.js","63443ddd40be59a3afdf9318fd380986"],["icon.ico","458304c2d4b7bac06d6949ddeaff304b"],["icon.png","2ef56805e55c50ca1f3fb9abf142e68d"],["index.html","9eb3427e42a272b95f9283f61728c80c"],["manifest.json","2db55f544c309bfb416853ef0cb57a8a"],["package-lock.json","bbde9858432c1b20e7121d9f9cc333b0"],["start.html","abcc641759e6052b2090383da40e45cd"]];
+var precacheConfig = [["BBZ-Logo-Master-dark.png","05cb0bb6cc1d92e2d1b0c25b006f09cc"],["BBZ-Logo-Master.png","57a64ff3aadd059d78c28a5cf295192d"],["helper.js","63443ddd40be59a3afdf9318fd380986"],["icon.ico","458304c2d4b7bac06d6949ddeaff304b"],["icon.png","2ef56805e55c50ca1f3fb9abf142e68d"],["index.html","78a4beb825929749681509c95f1a1a1f"],["manifest.json","2db55f544c309bfb416853ef0cb57a8a"],["package-lock.json","bbde9858432c1b20e7121d9f9cc333b0"],["start.html","abcc641759e6052b2090383da40e45cd"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
