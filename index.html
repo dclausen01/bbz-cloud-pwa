@@ -137,6 +137,10 @@
           const webViewWiki = document.getElementById("webViewWiki");
           // Set the source of the start page
           webViewStart.src = "start.html";
+          let windowObjectReference = {
+              "https://cryptpad.fr": null
+          }; // global variable to store reference of the window object
+
           // Set the current WebView to the start page
           let currentWebView = webViewStart;
         // Function to read entries from localStorage and append them to the list
@@ -212,9 +216,17 @@
       };
     }
 
-    function loadUrlNewWindow(url, type) {
-      window.open(url, type, 'menubar=no, status=no, width=1100, height=700, location=no, toolbar=no');
-    }
+    // Function to load a URL into a new window
+   function loadUrlNewWindow(url, type) {
+      // If window already exists, then set focus to it instead of opening a new window
+      const windowObject = windowObjectReference[url] || null;
+      if (windowObject === null || windowObject.closed) {
+        windowObjectReference[url] = window.open(url, type, 'menubar=no, status=no, width=1100, height=700, location=no, toolbar=no');
+      } else {
+        windowObject.focus();
+      }
+    } 
+
     // Open modal when add entry button is clicked
     const addEntryBtn = document.getElementById("addEntryBtn");
     const modal = document.getElementById("modal");
